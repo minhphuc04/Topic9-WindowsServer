@@ -1,4 +1,4 @@
-#Topic 9 Windows Server
+# Topic 9 Windows Server
 ---
  Bước 1: Cài đặt Remmina
  sudo apt update
@@ -33,4 +33,24 @@ Thực hiện các bước sau:
 
     Tiếp tục nhấn Next cho đến khi thấy nút Install → Nhấn Install
 3. Sau khi cài xong vào Server Manager nhấn vào Tools chọn "Internet Information Servics (IIS) Manager"
-4. 
+## Cài đặt SQL Server 2016 
+1. Tải từ link https://software.vietnix.tech/datastore/sources/SQL_Server/sql2016/
+2. Mount file ISO
+Click chuột phải vào file en_sql_server_2016...iso → chọn Mount
+4. Chạy file cài đặt
+Vào ổ đĩa mới vừa được Mount ra → chạy setup.exe
+5. Chọn tab Installation
+6. Chọn dòng đầu tiên:
+New SQL Server stand-alone installation or add features to an existing installation
+Sau đó làm theo các bước sau:
+| Bước | Mục                           | Hành động                                                               |
+| ---- | ----------------------------- | ----------------------------------------------------------------------- |
+| 1️⃣  | Product Key                   | Chọn Evaluation hoặc để mặc định nếu không có key                       |
+| 2️⃣  | License Terms                 | Tick "I accept" → Next                                                  |
+| 3️⃣  | Microsoft Updates             | Giữ mặc định hoặc bỏ tick → Next                                        |
+| 4️⃣  | Install Setup Files           | Chờ kiểm tra xong → Next                                                |
+| 5️⃣  | Feature Selection             | Tick: ✅ **Database Engine Services** + **Client Tools Connectivity**    |
+| 6️⃣  | Instance Configuration        | Chọn: **Default Instance** → Next                                       |
+| 7️⃣  | Server Configuration          | Giữ nguyên → Next                                                       |
+| 8️⃣  | Database Engine Configuration | Chọn **Mixed Mode**, nhập mật khẩu cho `sa` + nhấn **Add Current User** |
+| 9️⃣  | Ready to Install              | Kiểm tra lại rồi nhấn **Install**                                       |
