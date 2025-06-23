@@ -7,17 +7,29 @@ Bước 2: Mở Remmina
 remmina
 Bước 3: Connect theo thông tin đã cấp
 1. Mở port (ví dụ: port 80 - HTTP)
+```
 netsh advfirewall firewall add rule name="Allow Port 80" dir=in action=allow protocol=TCP localport=80
+```
 2. Cho phép IP cụ thể truy cập port
+```
 netsh advfirewall firewall add rule name="Allow IP" dir=in action=allow remoteip=192.168.1.100 protocol=TCP localport=80
+```
 3. Chặn port cụ thể (ví dụ: port 21 - FTP)
+```
 netsh advfirewall firewall add rule name="Block Port 21" dir=in action=block protocol=TCP localport=21
+```
 4. Chặn IP cụ thể (ví dụ: 192.168.1.101)
+```
 netsh advfirewall firewall add rule name="Block IP" dir=in action=block remoteip=192.168.1.101
+```
 5. Giới hạn truy cập từ một IP duy nhất (ví dụ: cho phép IP hiện tại tôi dùng)
+```
 netsh advfirewall firewall set rule name="Allow Port 3389" new remoteip=222.255.214.39
+```
 6. Kiểm tra lại các rule đã tạo
+```
 netsh advfirewall firewall show rule name=all | findstr "Allow"
+```
 ## Cài đặt IIS Webserver
 1. Mở Server Manager
 2. Chọn: Manage → Add Roles and Features
@@ -33,46 +45,62 @@ Thực hiện các bước sau:
 
     Tiếp tục nhấn Next cho đến khi thấy nút Install → Nhấn Install
 3. Sau khi cài xong vào Server Manager nhấn vào Tools chọn "Internet Information Servics (IIS) Manager"
-## Cài đặt SQL Server 2016 
-1. Tải từ link https://software.vietnix.tech/datastore/sources/SQL_Server/sql2016/
-2. Mount file ISO
-Click chuột phải vào file en_sql_server_2016...iso → chọn Mount
-4. Chạy file cài đặt
-Vào ổ đĩa mới vừa được Mount ra → chạy setup.exe
-5. Chọn tab Installation
-6. Chọn dòng đầu tiên:
+# Hướng dẫn cài đặt SQL Server 2016 & MySQL
+
+##  Cài đặt SQL Server 2016
+
+### 1. Tải về
+- Link: [SQL Server 2016 ISO](https://software.vietnix.tech/datastore/sources/SQL_Server/sql2016/)
+
+### 2. Mount file ISO
+- Nhấn chuột phải vào file `en_sql_server_2016...iso` → chọn **Mount**
+
+### 3. Chạy cài đặt
+- Mở ổ đĩa mới vừa được mount → chạy `setup.exe`
+
+### 4. Cài đặt
+- Chọn tab **Installation**
+- Nhấn vào dòng đầu tiên:
 New SQL Server stand-alone installation or add features to an existing installation
-Sau đó làm theo các bước sau:
+
+### 5. Làm theo hướng dẫn sau:
+
 | Bước | Mục                           | Hành động                                                               |
 | ---- | ----------------------------- | ----------------------------------------------------------------------- |
-| 1️⃣  | Product Key                   | Chọn Evaluation hoặc để mặc định nếu không có key                       |
-| 2️⃣  | License Terms                 | Tick "I accept" → Next                                                  |
-| 3️⃣  | Microsoft Updates             | Giữ mặc định hoặc bỏ tick → Next                                        |
-| 4️⃣  | Install Setup Files           | Chờ kiểm tra xong → Next                                                |
+| 1️⃣  | Product Key                   | Chọn **Evaluation** hoặc để mặc định nếu không có key                   |
+| 2️⃣  | License Terms                 | Tick **"I accept"** → **Next**                                          |
+| 3️⃣  | Microsoft Updates             | Giữ mặc định hoặc bỏ tick → **Next**                                    |
+| 4️⃣  | Install Setup Files           | Chờ kiểm tra xong → **Next**                                            |
 | 5️⃣  | Feature Selection             | Tick: ✅ **Database Engine Services** + **Client Tools Connectivity**    |
-| 6️⃣  | Instance Configuration        | Chọn: **Default Instance** → Next                                       |
-| 7️⃣  | Server Configuration          | Giữ nguyên → Next                                                       |
+| 6️⃣  | Instance Configuration        | Chọn: **Default Instance** → **Next**                                   |
+| 7️⃣  | Server Configuration          | Giữ nguyên → **Next**                                                   |
 | 8️⃣  | Database Engine Configuration | Chọn **Mixed Mode**, nhập mật khẩu cho `sa` + nhấn **Add Current User** |
-| 9️⃣  | Ready to Install              | Kiểm tra lại rồi nhấn **Install**                                       |
-## Cài đặt MySQL
-1. Cài từ trang chính
-Link: https://dev.mysql.com/downloads/mysql/
-Cài bản MSI Installer (64-bit)
-Trong quá trình cài:
-    Chọn Developer Default
-    Thiết lập mật khẩu cho user root
-2. Cài đặt MySQL
-Chạy file cài đặt → làm theo hướng dẫn sau:
+| 9️⃣  | Ready to Install              | Kiểm tra lại → nhấn **Install**                                         |
+
+---
+
+##  Cài đặt MySQL
+
+### 1. Tải về
+- Truy cập trang chính thức: [MySQL Downloads](https://dev.mysql.com/downloads/mysql/)
+- Chọn bản: **Windows (x86, 64-bit), MSI Installer**
+
+### 2. Cài đặt
+- Chạy file `.msi` → làm theo hướng dẫn sau:
+
 | Bước                         | Hành động                                                         |
 | ---------------------------- | ----------------------------------------------------------------- |
-| **1. Setup Type**            | Chọn **Developer Default** (bao gồm server, workbench, tools...)  |
-| **2. Check Requirements**    | Nếu thiếu Visual C++ → cài thêm, rồi nhấn Next lại                |
+| **1. Setup Type**            | Chọn **Developer Default** (gồm server, workbench, tools...)      |
+| **2. Check Requirements**    | Nếu thiếu Visual C++ → cài thêm rồi nhấn **Next** lại             |
 | **3. Installation**          | Nhấn **Execute** để bắt đầu cài các thành phần                    |
-| **4. Product Configuration** | Chọn cấu hình mặc định → nhấn **Next**                            |
+| **4. Product Configuration** | Giữ cấu hình mặc định → nhấn **Next**                             |
 | **5. Authentication Mode**   | Chọn **Use Legacy Authentication Method** *(tương thích với PHP)* |
-| **6. Tạo user**              | Tạo mật khẩu cho tài khoản `root`, ghi nhớ lại!                   |
+| **6. Tạo user**              | Đặt mật khẩu cho tài khoản `root`, **ghi nhớ lại!**               |
 | **7. Services**              | Giữ mặc định: MySQL chạy như dịch vụ Windows → **Next**           |
 | **8. Apply Configuration**   | Nhấn **Execute** → chờ hoàn tất                                   |
+
+---
+
 3.  MySQL Configuration Wizard
  3.1. Type and Networking
 
