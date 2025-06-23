@@ -148,5 +148,5 @@ https://www.microsoft.com/web/downloads/platform.aspx
     Physical path: C:\inetpub\wwwroot\wordpress
 
 Nhấn OK
-
+4.5. Thêm index.php vào Default Document
    
