@@ -197,7 +197,7 @@ https://www.microsoft.com/web/downloads/platform.aspx
      ![image](https://github.com/user-attachments/assets/69deefb6-c0b4-4799-96df-69a4763af152)
      
 10. Login vào tài khoản vừa thiết lập
-     min![image](https://github.com/user-attachments/assets/2b222048-9d85-4a0c-8763-bac8ffcd11b5)
+     ![image](https://github.com/user-attachments/assets/2b222048-9d85-4a0c-8763-bac8ffcd11b5)
      
 11. Hoàn tất Website
      ![image](https://github.com/user-attachments/assets/9c7cf0b9-b5f6-4098-b373-5a3f17d812c7)
