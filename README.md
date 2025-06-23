@@ -143,10 +143,13 @@ https://www.microsoft.com/web/downloads/platform.aspx
 
 4.2. Chuột phải vào Sites → Add Website
 
-    Site name: wordpress
+    Site name: dùng Default Web Site
 
     Physical path: C:\inetpub\wwwroot\wordpress
 
 Nhấn OK
+---
 4.5. Thêm index.php vào Default Document
+4.6. Restart lại Web trong IIS
+4.7. Truy cập web với http://localhost/
    
