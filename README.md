@@ -106,3 +106,4 @@ Chạy file cài đặt → làm theo hướng dẫn sau:
     Nhấn Execute → chờ hoàn tất
 
     Nếu mọi thứ đều hiện ✔️, nhấn Finish
+![image](https://github.com/user-attachments/assets/bb9109fc-5921-4436-90ef-b056217acddd)
