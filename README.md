@@ -205,27 +205,8 @@ https://www.microsoft.com/web/downloads/platform.aspx
 
 
 ## Cài SSL cho Website
-1. Mở PowerShell với quyền admin, chạy:
-```
-New-SelfSignedCertificate -DnsName "localhost" -CertStoreLocation "cert:\LocalMachine\My"
-```
-
-Mở MMC (Microsoft Management Console):
-
-    Bấm Windows + R, gõ: mmc
-
-    Vào File > Add/Remove Snap-in… > Certificates > Computer account > Local Computer
-
-Vào:
-
-    Certificates (Local Computer) > Personal > Certificates
-
-    => bạn sẽ thấy chứng chỉ localhost vừa tạo.
-
-    Click chuột phải → All Tasks > Export → xuất ra file .pfx
-
-3. Gán chứng chỉ ZeroSSL cho trang WordPress trên IIS
-3.1. Truy cập vào Linux tạo SSL từ 3 file crt có sẵn từ ZeroSSL
+ Gán chứng chỉ ZeroSSL cho trang WordPress trên IIS
+1. Truy cập vào Linux tạo SSL từ 3 file crt có sẵn từ ZeroSSL
 ```
 openssl pkcs12 -export \
   -inkey /home/minhphuc/Desktop/cert/mphuc.wp.vietnix.tech/private.key \
@@ -235,17 +216,17 @@ openssl pkcs12 -export \
   -passout pass:123456 \
   -legacy
 ```
-3.2. Duy chuyển file mphuc.wp.vietnix.tech.pfx vừa tạo sang Windows Server
-3.3. Mở IIS Manager --> chọn Server Certificates
+2. Duy chuyển file mphuc.wp.vietnix.tech.pfx vừa tạo sang Windows Server
+3. Mở IIS Manager --> chọn Server Certificates
 ![image](https://github.com/user-attachments/assets/cb728c1b-bdff-4dcd-8302-a4faa34d8e50)
-3.4. Chọn import
+4. Chọn import
 ![image](https://github.com/user-attachments/assets/e4e0dda1-dd11-410f-afb3-954136e14ab2)
-3.5. Chọn đường dẫn đến chứng chỉ mphuc.wp.vietnix.tech.pfx sau đó nhập password khi tạo file
+5. Chọn đường dẫn đến chứng chỉ mphuc.wp.vietnix.tech.pfx sau đó nhập password khi tạo file
 ![image](https://github.com/user-attachments/assets/11e81a68-5223-4c97-80ed-a02639c044bd)
-3.6. Import ZeroSSL thành công
-3.7. Quay về  IIS Manager chọn Bindings chọn SSL Certificate vừa tạo
+6. Import ZeroSSL thành công
+7. Quay về  IIS Manager chọn Bindings chọn SSL Certificate vừa tạo
 ![image](https://github.com/user-attachments/assets/2ef1a80c-6243-4add-9d75-5f0821da32d6)
-3.8. Hoàn tất.
+8. Hoàn tất.
 
 ### Kết quả khi Import ZeroSSL cho domain mphuc.wp.vietnix.tech
 ![image](https://github.com/user-attachments/assets/d6b85258-280a-4886-b9dd-1df818bd8823)
