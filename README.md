@@ -154,12 +154,16 @@ Nhấn OK
 4.7. Truy cập web với http://localhost/
 4.8. Config wordpress connect đến database 
 ![image](https://github.com/user-attachments/assets/ab9b2409-8766-4dc2-b46b-456ae83a5ba4)
+
 4.9 Nhấn vào "Run the installation" để tiếp tục cài đặt.
 ![image](https://github.com/user-attachments/assets/bb00089d-25b8-475c-9de0-3b2e25b0c53c)
+
 4.10. Điền thông tin cho website của bạn
 ![image](https://github.com/user-attachments/assets/69deefb6-c0b4-4799-96df-69a4763af152)
+
 4.11. Login vào tài khoản vừa thiết lập
 min![image](https://github.com/user-attachments/assets/2b222048-9d85-4a0c-8763-bac8ffcd11b5)
+
 4.12. Hoàn tất Website
 ![image](https://github.com/user-attachments/assets/d8681429-a44b-4687-94af-613e0812bc2f)
 
