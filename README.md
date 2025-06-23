@@ -54,3 +54,10 @@ Sau đó làm theo các bước sau:
 | 7️⃣  | Server Configuration          | Giữ nguyên → Next                                                       |
 | 8️⃣  | Database Engine Configuration | Chọn **Mixed Mode**, nhập mật khẩu cho `sa` + nhấn **Add Current User** |
 | 9️⃣  | Ready to Install              | Kiểm tra lại rồi nhấn **Install**                                       |
+## Cài đặt MySQL
+1. Cài từ trang chính
+Link: https://dev.mysql.com/downloads/mysql/
+Cài bản MSI Installer (64-bit)
+Trong quá trình cài:
+    Chọn Developer Default
+    Thiết lập mật khẩu cho user root
