@@ -172,8 +172,8 @@ https://www.microsoft.com/web/downloads/platform.aspx
     Site name: dùng Default Web Site
 
     Physical path: C:\inetpub\wwwroot\wordpress
-
 Nhấn OK
+
 ---
 4.5. Thêm index.php vào Default Document
 4.6. Restart lại Web trong IIS
