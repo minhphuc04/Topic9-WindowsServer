@@ -71,7 +71,7 @@ New SQL Server stand-alone installation or add features to an existing installat
 | 2️⃣  | License Terms                 | Tick **"I accept"** → **Next**                                          |
 | 3️⃣  | Microsoft Updates             | Giữ mặc định hoặc bỏ tick → **Next**                                    |
 | 4️⃣  | Install Setup Files           | Chờ kiểm tra xong → **Next**                                            |
-| 5️⃣  | Feature Selection             | Tick: ✅ **Database Engine Services** + **Client Tools Connectivity**    |
+| 5️⃣  | Feature Selection             | Tick:  **Database Engine Services** + **Client Tools Connectivity**    |
 | 6️⃣  | Instance Configuration        | Chọn: **Default Instance** → **Next**                                   |
 | 7️⃣  | Server Configuration          | Giữ nguyên → **Next**                                                   |
 | 8️⃣  | Database Engine Configuration | Chọn **Mixed Mode**, nhập mật khẩu cho `sa` + nhấn **Add Current User** |
@@ -110,7 +110,7 @@ New SQL Server stand-alone installation or add features to an existing installat
 
 🔹 3.2. Authentication Method
 
-    Chọn: ✅ Use Legacy Authentication Method
+    Chọn:  Use Legacy Authentication Method
     (rất quan trọng để WordPress/PHP kết nối)
     → Next
 
@@ -118,7 +118,7 @@ New SQL Server stand-alone installation or add features to an existing installat
 
     Nhập mật khẩu cho user root
 
-        ⚠️ Ghi nhớ mật khẩu này — bạn sẽ dùng trong bước cài WordPress sau.
+         Ghi nhớ mật khẩu này — bạn sẽ dùng trong bước cài WordPress sau.
 
 → Next
 🔹 3.4. Windows Service
@@ -127,7 +127,7 @@ New SQL Server stand-alone installation or add features to an existing installat
 
         Tên dịch vụ: MySQL93
 
-        ✅ “Start the server at system startup” → Next
+         “Start the server at system startup” → Next
 
 🔹 3.5. Apply Configuration
 
@@ -167,15 +167,15 @@ https://www.microsoft.com/web/downloads/platform.aspx
    ---
    Tạo website trong IIS
  
-     1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
+   1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
      ```
      222.255.214.39    mphuc.wp.vietnix.tech
      ```
      ![image](https://github.com/user-attachments/assets/01e0368f-6f9b-47f0-b554-98c5f495a9bd)
 
-     2. Mở IIS Manager
+   2. Mở IIS Manager
      
-     3. Chuột phải vào Sites → Add Website
+   3. Chuột phải vào Sites → Add Website
      
          Site name: dùng Default Web Site
      
