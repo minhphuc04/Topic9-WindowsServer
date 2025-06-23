@@ -61,3 +61,48 @@ Cài bản MSI Installer (64-bit)
 Trong quá trình cài:
     Chọn Developer Default
     Thiết lập mật khẩu cho user root
+2. Cài đặt MySQL
+Chạy file cài đặt → làm theo hướng dẫn sau:
+| Bước                         | Hành động                                                         |
+| ---------------------------- | ----------------------------------------------------------------- |
+| **1. Setup Type**            | Chọn **Developer Default** (bao gồm server, workbench, tools...)  |
+| **2. Check Requirements**    | Nếu thiếu Visual C++ → cài thêm, rồi nhấn Next lại                |
+| **3. Installation**          | Nhấn **Execute** để bắt đầu cài các thành phần                    |
+| **4. Product Configuration** | Chọn cấu hình mặc định → nhấn **Next**                            |
+| **5. Authentication Mode**   | Chọn **Use Legacy Authentication Method** *(tương thích với PHP)* |
+| **6. Tạo user**              | Tạo mật khẩu cho tài khoản `root`, ghi nhớ lại!                   |
+| **7. Services**              | Giữ mặc định: MySQL chạy như dịch vụ Windows → **Next**           |
+| **8. Apply Configuration**   | Nhấn **Execute** → chờ hoàn tất                                   |
+3.  MySQL Configuration Wizard
+ 3.1. Type and Networking
+
+    Chọn: Standalone MySQL Server / Development Machine
+
+    Port: để mặc định 3306 → Next
+
+🔹 3.2. Authentication Method
+
+    Chọn: ✅ Use Legacy Authentication Method
+    (rất quan trọng để WordPress/PHP kết nối)
+    → Next
+
+🔹 3.3. Accounts and Roles
+
+    Nhập mật khẩu cho user root
+
+        ⚠️ Ghi nhớ mật khẩu này — bạn sẽ dùng trong bước cài WordPress sau.
+
+→ Next
+🔹 3.4. Windows Service
+
+    Để mặc định:
+
+        Tên dịch vụ: MySQL93
+
+        ✅ “Start the server at system startup” → Next
+
+🔹 3.5. Apply Configuration
+
+    Nhấn Execute → chờ hoàn tất
+
+    Nếu mọi thứ đều hiện ✔️, nhấn Finish
