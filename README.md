@@ -32,3 +32,5 @@ Thực hiện các bước sau:
     Khi popup hiện ra → Nhấn Add Features → rồi nhấn Next
 
     Tiếp tục nhấn Next cho đến khi thấy nút Install → Nhấn Install
+3. Sau khi cài xong vào Server Manager nhấn vào Tools chọn "Internet Information Servics (IIS) Manager"
+4. 
