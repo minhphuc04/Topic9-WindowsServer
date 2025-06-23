@@ -233,6 +233,10 @@ openssl pkcs12 -export \
 3.5. Chọn đường dẫn đến chứng chỉ mphuc.wp.vietnix.tech.pfx sau đó nhập password khi tạo file
 ![image](https://github.com/user-attachments/assets/11e81a68-5223-4c97-80ed-a02639c044bd)
 3.6. Import ZeroSSL thành công
+3.7. Quay về  IIS Manager chọn Bindings chọn SSL Certificate vừa tạo
+![image](https://github.com/user-attachments/assets/2ef1a80c-6243-4add-9d75-5f0821da32d6)
+3.8. Hoàn tất.
+
 ### Kết quả khi Import ZeroSSL cho domain mphuc.wp.vietnix.tech
 ![image](https://github.com/user-attachments/assets/d6b85258-280a-4886-b9dd-1df818bd8823)
 
