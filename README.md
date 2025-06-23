@@ -176,8 +176,11 @@ Nhấn OK
 
 ---
 4.5. Thêm index.php vào Default Document
+
 4.6. Restart lại Web trong IIS
-4.7. Truy cập web với http://localhost/
+
+4.7. Truy cập web với http://mphuc.wp.vietnix.tech/wp-admin/)
+
 4.8. Config wordpress connect đến database 
 ![image](https://github.com/user-attachments/assets/ab9b2409-8766-4dc2-b46b-456ae83a5ba4)
 
