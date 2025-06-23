@@ -139,7 +139,7 @@ New SQL Server stand-alone installation or add features to an existing installat
 1. Truy cập đường dẫn sau để tải tool:
 https://www.microsoft.com/web/downloads/platform.aspx
 2. Giải nén
-3. Thêm PHP vào PATH
+3. Thêm biến môi trường PHP vào PATH
 ## Cài mã nguồn WordPress
 1. Tải bản mới nhất tại: https://wordpress.org/latest.zip
 2. Giải nén WordPress
@@ -214,35 +214,17 @@ Vào:
 
     Click chuột phải → All Tasks > Export → xuất ra file .pfx
 
-3. Gán chứng chỉ SSL cho trang WordPress trên IIS
-
-    Mở IIS Manager
-
-    Chọn Default Web Site
-
-    Bên phải, chọn Bindings…
-
-    Bấm Add… và chọn:
-
-        Type: https
-
-        IP address: All Unassigned hoặc IP bạn muốn dùng
-
-        Port: 443
-
-        SSL certificate: chọn chứng chỉ localhost bạn đã tạo
-
-    Nhấn OK và Close
-
-4. Bật HTTPS trong WordPress
-
-    Vào wp-config.php (trong thư mục WordPress), thêm vào dòng sau:
-
-$_SERVER['HTTPS'] = 'on';
-
-Đăng nhập WordPress admin → Settings > General:
-
-    WordPress Address (URL): https://localhost
-5. Truy cập được https://localhost
-
+3. Gán chứng chỉ ZeroSSL cho trang WordPress trên IIS
+3.1. Truy cập vào Linux tạo SSL từ 3 file crt có sẵn từ ZeroSSL
+```
+openssl pkcs12 -export \
+  -inkey /home/minhphuc/Desktop/cert/mphuc.wp.vietnix.tech/private.key \
+  -in /home/minhphuc/Desktop/cert/mphuc.wp.vietnix.tech/certificate.crt \
+  -certfile /home/minhphuc/Desktop/cert/mphuc.wp.vietnix.tech/ca_bundle.crt \
+  -out /home/minhphuc/Desktop/cert/mphuc.wp.vietnix.tech/mphuc.wp.vietnix.tech.pfx \
+  -passout pass:123456 \
+  -legacy
+```
+3.2. Duy chuyển file mphuc.wp.vietnix.tech.pfx vừa tạo sang Windows Server
+3.3.
 
