@@ -1,4 +1,5 @@
 #Topic 9 Windows Server
+---
  Bước 1: Cài đặt Remmina
  sudo apt update
 sudo apt install remmina remmina-plugin-rdp
