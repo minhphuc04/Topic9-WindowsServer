@@ -166,4 +166,55 @@ min![image](https://github.com/user-attachments/assets/2b222048-9d85-4a0c-8763-b
 
 4.12. Hoàn tất Website
 ![image](https://github.com/user-attachments/assets/d8681429-a44b-4687-94af-613e0812bc2f)
+## Cài SSL cho Website
+1. Mở PowerShell với quyền admin, chạy:
+```
+New-SelfSignedCertificate -DnsName "localhost" -CertStoreLocation "cert:\LocalMachine\My"
+```
+
+Mở MMC (Microsoft Management Console):
+
+    Bấm Windows + R, gõ: mmc
+
+    Vào File > Add/Remove Snap-in… > Certificates > Computer account > Local Computer
+
+Vào:
+
+    Certificates (Local Computer) > Personal > Certificates
+
+    => bạn sẽ thấy chứng chỉ localhost vừa tạo.
+
+    Click chuột phải → All Tasks > Export → xuất ra file .pfx, có thể đặt pass bảo vệ.
+
+3. Gán chứng chỉ SSL cho trang WordPress trên IIS
+
+    Mở IIS Manager
+
+    Chọn Default Web Site
+
+    Bên phải, chọn Bindings…
+
+    Bấm Add… và chọn:
+
+        Type: https
+
+        IP address: All Unassigned hoặc IP bạn muốn dùng
+
+        Port: 443
+
+        SSL certificate: chọn chứng chỉ localhost bạn đã tạo
+
+    Nhấn OK và Close
+
+4. Bật HTTPS trong WordPress
+
+    Vào wp-config.php (trong thư mục WordPress), thêm vào dòng sau:
+
+$_SERVER['HTTPS'] = 'on';
+
+Đăng nhập WordPress admin → Settings > General:
+
+    WordPress Address (URL): https://localhost
+
+
 
