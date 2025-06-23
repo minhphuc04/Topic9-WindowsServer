@@ -164,9 +164,9 @@ https://www.microsoft.com/web/downloads/platform.aspx
         Gõ IIS_IUSRS, bấm OK
 
     Cấp quyền Read & Execute + Modify
-   
-## Tạo website trong IIS
- -
+   ---
+   Tạo website trong IIS
+ 
      1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
      ```
      222.255.214.39    mphuc.wp.vietnix.tech
