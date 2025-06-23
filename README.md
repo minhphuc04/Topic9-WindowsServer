@@ -228,7 +228,8 @@ openssl pkcs12 -export \
 8. Hoàn tất.
 
 ### Kết quả khi Import ZeroSSL cho domain mphuc.wp.vietnix.tech
-![image](https://github.com/user-attachments/assets/d6b85258-280a-4886-b9dd-1df818bd8823)
+![image](https://github.com/user-attachments/assets/482ad2a8-757a-4605-b0be-6b602bc9116c)
+
 
 
 
