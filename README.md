@@ -166,11 +166,11 @@ https://www.microsoft.com/web/downloads/platform.aspx
     Cấp quyền Read & Execute + Modify
 4. Tạo website trong IIS
 
-4.1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
-```
-222.255.214.39    mphuc.wp.vietnix.tech
-```
-![image](https://github.com/user-attachments/assets/01e0368f-6f9b-47f0-b554-98c5f495a9bd)
+    4.1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
+    ```
+    222.255.214.39    mphuc.wp.vietnix.tech
+    ```
+    ![image](https://github.com/user-attachments/assets/01e0368f-6f9b-47f0-b554-98c5f495a9bd)
 
 4.2. Mở IIS Manager
 
