@@ -147,12 +147,10 @@ https://www.microsoft.com/web/downloads/platform.aspx
     Nhấn chuột phải vào wordpress-6.8.1.zip → Chọn Extract All...
 
     Giải nén vào thư mục:
-
+```
     C:\inetpub\wwwroot\wordpress
+```
 
-    (Tạo thư mục wordpress nếu chưa có)
-
-    📌 Nếu thư mục C:\inetpub\wwwroot không tồn tại → IIS chưa được cài hoàn chỉnh → Cần kiểm tra lại trong Server Manager.
 3. Cấp quyền thư mục
 
     Chuột phải vào C:\inetpub\wwwroot\wordpress
