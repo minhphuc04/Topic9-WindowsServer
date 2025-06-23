@@ -17,3 +17,17 @@ netsh advfirewall firewall add rule name="Block IP" dir=in action=block remoteip
 netsh advfirewall firewall set rule name="Allow Port 3389" new remoteip=222.255.214.39
 6. Kiểm tra lại các rule đã tạo
 netsh advfirewall firewall show rule name=all | findstr "Allow"
+## Cài đặt IIS Webserver
+1. Mở Server Manager
+2. Chọn: Manage → Add Roles and Features
+
+Thực hiện các bước sau:
+
+    Role-based or feature-based installation → Next
+
+    Chọn server mặc định đang hiển thị → Next
+
+    Tick chọn: Web Server (IIS)
+    Khi popup hiện ra → Nhấn Add Features → rồi nhấn Next
+
+    Tiếp tục nhấn Next cho đến khi thấy nút Install → Nhấn Install
