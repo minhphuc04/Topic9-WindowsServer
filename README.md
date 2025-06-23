@@ -191,7 +191,8 @@ Nhấn OK
 min![image](https://github.com/user-attachments/assets/2b222048-9d85-4a0c-8763-bac8ffcd11b5)
 
 4.12. Hoàn tất Website
-![image](https://github.com/user-attachments/assets/d8681429-a44b-4687-94af-613e0812bc2f)
+![image](https://github.com/user-attachments/assets/fd586c1f-4dce-4218-becd-acdf152871c1)
+
 ## Cài SSL cho Website
 1. Mở PowerShell với quyền admin, chạy:
 ```
