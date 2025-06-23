@@ -164,25 +164,25 @@ https://www.microsoft.com/web/downloads/platform.aspx
         Gõ IIS_IUSRS, bấm OK
 
     Cấp quyền Read & Execute + Modify
-   ---
+
+
    Tạo website trong IIS
  
-   1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
-     ```
-     222.255.214.39    mphuc.wp.vietnix.tech
-     ```
-     ![image](https://github.com/user-attachments/assets/01e0368f-6f9b-47f0-b554-98c5f495a9bd)
-
-   2. Mở IIS Manager
-     
-   3. Chuột phải vào Sites → Add Website
-     
-         Site name: dùng Default Web Site
-     
-         Physical path: C:\inetpub\wwwroot\wordpress
-         Nhấn OK
-     
-     ---
+      1. Trước tiên truy cập vào C:\Windows\System32\drivers\etc\hosts thêm
+        ```
+        222.255.214.39    mphuc.wp.vietnix.tech
+        ```
+        ![image](https://github.com/user-attachments/assets/01e0368f-6f9b-47f0-b554-98c5f495a9bd)
+   
+      2. Mở IIS Manager
+        
+      3. Chuột phải vào Sites → Add Website
+        
+            Site name: dùng Default Web Site
+        
+            Physical path: C:\inetpub\wwwroot\wordpress
+            Nhấn OK
+        
      4. Thêm index.php vào Default Document
      
      5. Restart lại Web trong IIS
@@ -192,7 +192,7 @@ https://www.microsoft.com/web/downloads/platform.aspx
      7. Config wordpress connect đến database 
      ![image](https://github.com/user-attachments/assets/ab9b2409-8766-4dc2-b46b-456ae83a5ba4)
      
-     8 Nhấn vào "Run the installation" để tiếp tục cài đặt.
+     8. Nhấn vào "Run the installation" để tiếp tục cài đặt.
      ![image](https://github.com/user-attachments/assets/bb00089d-25b8-475c-9de0-3b2e25b0c53c)
      
      9. Điền thông tin cho website của bạn
