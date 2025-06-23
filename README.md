@@ -184,7 +184,7 @@ Vào:
 
     => bạn sẽ thấy chứng chỉ localhost vừa tạo.
 
-    Click chuột phải → All Tasks > Export → xuất ra file .pfx, có thể đặt pass bảo vệ.
+    Click chuột phải → All Tasks > Export → xuất ra file .pfx
 
 3. Gán chứng chỉ SSL cho trang WordPress trên IIS
 
@@ -215,6 +215,6 @@ $_SERVER['HTTPS'] = 'on';
 Đăng nhập WordPress admin → Settings > General:
 
     WordPress Address (URL): https://localhost
-
+5. Truy cập được https://localhost
 
 
