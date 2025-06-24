@@ -225,8 +225,7 @@ openssl pkcs12 -export \
 6. Import ZeroSSL thành công
 7. Quay về  IIS Manager chọn Bindings chọn SSL Certificate vừa tạo
 ![image](https://github.com/user-attachments/assets/2ef1a80c-6243-4add-9d75-5f0821da32d6)
-8. Hoàn tất.
-### Kết quả khi Import ZeroSSL cho domain mphuc.wp.vietnix.tech
+8. Kết quả khi Import ZeroSSL cho domain mphuc.wp.vietnix.tech
 ![image](https://github.com/user-attachments/assets/482ad2a8-757a-4605-b0be-6b602bc9116c)
 
 
